@@ -1,0 +1,21 @@
+package com.carros.api.domain;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+
+@Service
+public class CarroService {
+	
+	@Autowired
+	CarroRepository repository;
+
+
+	public List<Carro>getCarros(){
+		return repository.findAll();
+	}
+	
+
+}

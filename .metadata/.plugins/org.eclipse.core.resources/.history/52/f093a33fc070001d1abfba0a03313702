@@ -1,0 +1,5 @@
+package com.algaworks.apirest.service;
+
+public class ClienteAtivadoEvent {
+
+}

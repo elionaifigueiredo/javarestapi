@@ -1,0 +1,32 @@
+package com.algaworks.apirest.notificador;
+
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Component;
+
+import com.algaworks.apirest.modelo.Cliente;
+
+
+//PAra que esta classe ou (Component) seja gerenciada pelo spring 
+//ou seja Spring vai encontrar e configurar até injet em outros Beans
+//Para isso deve trasnforma esta class em um Beans através do @Componet
+//Dessa forma o spring irá scannear as classes do projeto e encontrará este component
+//Realizando a instancia e adicionando dentro do container tomcat pq algume pode precisar
+
+@Profile("prod") // Notificado de produção conforme anotação @Profile
+@TipoDeNotificador(NivelUrgencia.URGENTE)
+@Component //se remover , o @Autowired(required = false) //faz com a class notificadorEmail não seja obrigatori
+public class NotificadorEmail implements Notificador {
+	
+	public NotificadorEmail() {
+		System.out.println("Notificador de Produção");
+	}
+	
+	
+	@Override
+	public void notificar(Cliente cliente, String mensagem) {
+	
+		System.out.printf("Notificando %s através do e-mail %s: %s\n",
+				cliente.getNome(), cliente.getEmail(), mensagem);
+	}
+
+}

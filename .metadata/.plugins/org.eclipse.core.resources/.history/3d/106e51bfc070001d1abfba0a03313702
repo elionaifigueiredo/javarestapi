@@ -1,0 +1,14 @@
+package com.algaworks.apirest.listener;
+
+import org.springframework.context.event.EventListener;
+
+import com.algaworks.apirest.service.ClienteAtivadoEvent;
+
+public class NotificacaoService {
+	
+	@EventListener //metodo é um ouvinte 
+	public void clienteAtivadoListener(ClienteAtivadoEvent event) {
+			
+	}
+
+}

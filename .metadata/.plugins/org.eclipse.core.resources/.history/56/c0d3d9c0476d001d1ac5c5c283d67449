@@ -1,0 +1,23 @@
+package pacote.de.preco;
+
+public class Calculos {
+
+	public static void main(String[] args) {
+		
+		
+		Preco preco = new Preco();
+		
+		preco.custos = 140;
+		
+		Produto produto = new Produto();
+		
+		produto.definirPreco(preco, 20, 15 );
+		
+		System.out.println(preco.custos);
+		
+		
+		
+	}
+	
+	
+}

@@ -1,0 +1,10 @@
+package eftechweb.modelo;
+
+public class Preco {
+	
+	double preco;
+	double impostos;
+	double lucro;
+	double venda;
+
+}

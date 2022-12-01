@@ -1,0 +1,18 @@
+package com.algaworks.apirest.listener;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.algaworks.apirest.notificador.NivelUrgencia;
+import com.algaworks.apirest.notificador.Notificador;
+import com.algaworks.apirest.notificador.TipoDeNotificador;
+
+public class EmissaoNotaFiscalService {
+	
+	@TipoDeNotificador(NivelUrgencia.URGENTE)
+	@Autowired
+	private Notificador notificador;
+	
+	
+	
+
+}

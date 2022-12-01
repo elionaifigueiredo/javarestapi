@@ -1,0 +1,27 @@
+package com.carros.api.domain;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+
+@Service
+public class CarroService {
+	
+	@Autowired
+	CarroRepository repository;
+
+	public List<Carro> getCarros() {
+
+		List<Carro> carros = new ArrayList<>();
+
+		carros.add(new Carro(1L, "Brasilia"));
+		carros.add(new Carro(2L, "fusca"));
+		carros.add(new Carro(3L, "Pampa"));
+
+		return carros;
+	}
+
+}

@@ -1,0 +1,31 @@
+package eftechweb.modelo;
+
+public class FolhaDePagamento {
+
+	double calcularSalario
+
+	(int horasNormais, int horasExtras, double valorHorasNormais, double valorHorasExtras)
+
+	{
+
+		double valorhorasNormais = horasNormais * valorHorasNormais;
+		double valorhorasExtras = horasExtras * valorHorasExtras;
+
+		return horasNormais + horasExtras;
+
+	}
+
+
+public static void main(String[] args) {
+	
+	
+	FolhaDePagamento folha = new FolhaDePagamento();
+
+		double salario = folha.calcularSalario(120, 12, 35, 40);
+		
+		System.out.println("Slaário calculado : " + salario);
+}
+
+}
+
+

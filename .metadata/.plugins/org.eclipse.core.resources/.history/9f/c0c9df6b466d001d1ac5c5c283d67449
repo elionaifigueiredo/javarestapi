@@ -1,0 +1,10 @@
+package pacote.de.preco;
+
+public class Preco {
+	
+	double preco;
+	double impostos;
+	double lucro;
+	double venda;
+
+}

@@ -1,0 +1,10 @@
+package pacote.de.preco;
+
+public class Produto {
+	
+	
+	void definirPreco(double custo) {
+		custo = custo + 1.20;
+	}
+
+}

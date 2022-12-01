@@ -1,0 +1,38 @@
+package com.algaworks.apirest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.algaworks.apirest.modelo.Cliente;
+import com.algaworks.apirest.service.AtivacaoClienteService;
+
+@Controller //tbm é um Beans Spring pq @Controller ja tem o @Componet
+public class meuPrimeiroController {
+	
+	
+	//Instancia
+	private AtivacaoClienteService ativacaoClienteService;
+	
+	
+	// Injetada a instancia via Construtor da class atual
+	public meuPrimeiroController(AtivacaoClienteService ativacaoClienteService) {
+		
+		this.ativacaoClienteService = ativacaoClienteService;
+		System.out.println("Controlle com constutor e injeção do objeto ativacaoClienteService: " + ativacaoClienteService);
+	}
+
+
+
+	@GetMapping("/hello")
+	@ResponseBody
+	public String Hello() {
+		
+		Cliente cliente = new Cliente("João", "joao@gmail.com", "123456789");
+		
+		ativacaoClienteService.ativar(cliente);
+		
+		
+		return "Hello";
+	}
+}

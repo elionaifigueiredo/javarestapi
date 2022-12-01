@@ -1,0 +1,12 @@
+package com.algaworks.apirest.listener;
+
+import com.algaworks.apirest.service.ClienteAtivadoEvent;
+
+public class NotificacaoService {
+	
+	
+	public void clienteAtivadoListener(ClienteAtivadoEvent event) {
+		
+	}
+
+}

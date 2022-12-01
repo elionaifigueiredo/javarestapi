@@ -1,0 +1,28 @@
+package com.example.demo.api;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/")
+public class IndexController {
+
+	@GetMapping()
+	public String get() {
+		return "Hello World";
+	}
+	@GetMapping()
+	public String post() {
+		return "POst Hello World";
+	}
+	@GetMapping()
+	public String put() {
+		return "PUt Hello World";
+	}
+	@GetMapping()
+	public String delete() {
+		return "Delete Hello World";
+	}	
+	
+}

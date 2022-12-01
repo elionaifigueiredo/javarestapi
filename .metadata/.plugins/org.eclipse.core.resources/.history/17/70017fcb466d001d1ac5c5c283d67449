@@ -1,0 +1,14 @@
+package pacote.de.preco;
+
+public class CalculosDeIpfr {
+	
+	
+	double CalculosImpostos(Preco preco, double valor) {
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,28 @@
+package com.carros.api.controllerDoCarro;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.carros.api.domain.Carro;
+import com.carros.api.domain.CarroService;
+
+@RestController
+@RequestMapping("/api/v1/carros")
+public class ControllerCarro {
+
+	
+	CarroService carroService = new CarroService();
+	
+	@GetMapping
+	public List<Carro> getCarros(){
+		
+		return carroService.getCarros();
+		
+	}
+	
+	
+		
+}

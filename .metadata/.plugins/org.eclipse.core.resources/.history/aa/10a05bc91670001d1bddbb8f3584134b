@@ -1,0 +1,45 @@
+package com.algaworks.apirest.service;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.algaworks.apirest.modelo.Cliente;
+import com.algaworks.apirest.notificador.NivelUrgencia;
+import com.algaworks.apirest.notificador.Notificador;
+import com.algaworks.apirest.notificador.TipoDeNotificador;
+
+@Component  
+public class AtivacaoClienteService {
+	
+	
+	@TipoDeNotificador(NivelUrgencia.URGENTE) //Utiliza a notificação 
+	@Autowired
+	private Notificador notificador;
+	
+	//Construtor para realizar fazer injeção de independencia
+	//Criando um construtor que recebe como paramentro um objeto de um tipo que é gerenciado pelo Spring
+	//Aqui é um ponto de Injeção no caso é o Notificador
+	
+	@PostConstruct
+	public void init() {
+		System.out.println("INIT");
+	}
+	
+	@PreDestroy
+	public void destroy() {
+		System.out.println("DESTROY");
+	}
+	//Método que ativa o cliente e faz a notificação sendo injetada na Classe Controlle atraves do construtor
+	public void ativar(Cliente cliente) {
+		cliente.ativar();
+		
+			notificador.notificar(cliente,"Seu Cadastro esta ativo....");
+		
+	}
+
+	
+
+}

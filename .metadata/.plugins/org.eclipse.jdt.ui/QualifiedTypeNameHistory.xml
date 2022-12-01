@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="com.algaworks.apirest.service.AtivacaoClienteService"/>
+    <fullyQualifiedTypeName name="eftechweb.modelo.Carro"/>
+    <fullyQualifiedTypeName name="eftechweb.modelo.Proprietario"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Primary"/>
+    <fullyQualifiedTypeName name="eftechweb.modelo.Paciente"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+    <fullyQualifiedTypeName name="java.lang.annotation.Retention"/>
+    <fullyQualifiedTypeName name="java.lang.annotation.RetentionPolicy"/>
+    <fullyQualifiedTypeName name="eftechweb.modelo.FolhaDePagamento"/>
+    <fullyQualifiedTypeName name="javax.xml.validation.Validator"/>
+    <fullyQualifiedTypeName name="pacote.de.preco.Preco"/>
+    <fullyQualifiedTypeName name="pacote.de.preco.Produto"/>
+    <fullyQualifiedTypeName name="pacote.de.preco.CalculosDeIpfr"/>
+    <fullyQualifiedTypeName name="com.algaworks.apirest.notificador.NotificadorEmail"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Profile"/>
+    <fullyQualifiedTypeName name="com.algaworks.apirest.notificador.MockNotificadorEmail"/>
+    <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+    <fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationEventPublisher"/>
+    <fullyQualifiedTypeName name="com.algaworks.apirest.modelo.Cliente"/>
+    <fullyQualifiedTypeName name="com.algaworks.apirest.notificador.NivelUrgencia"/>
+    <fullyQualifiedTypeName name="com.algaworks.apirest.listener.NotificacaoService"/>
+    <fullyQualifiedTypeName name="com.algaworks.apirest.notificador.Notificador"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.algaworks.apirest.notificador.TipoDeNotificador"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="com.algaworks.apirest.service.ClienteAtivadoEvent"/>
+    <fullyQualifiedTypeName name="org.springframework.context.event.EventListener"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+</qualifiedTypeNameHistroy>
